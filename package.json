@@ -1,5 +1,5 @@
 {
-  "name": "Express com MongoDB e JWT",
+  "name": "Express com PostgreSQL e JWT",
   "version": "1.0.0",
   "description": "Backend em Express com banco MongoDB e autenticação JWT",
   "main": "src/app.js",

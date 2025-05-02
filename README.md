@@ -1,6 +1,6 @@
 # Backend Express MongoDB - Atividade IV v1
 
-Este é um projeto backend construído com Node.js, Express e MongoDB, fornecendo autenticação básica via token JWT e rotas protegidas.
+Este é um projeto backend construído com Node.js, Express e PostgreSQL, fornecendo autenticação básica via token JWT e rotas protegidas.
 
 # Tecnologias Utilizadas
 
