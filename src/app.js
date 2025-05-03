@@ -1,32 +1,25 @@
-require('dotenv').config();
-const express = require('express');
-const morgan = require('morgan');
-const cors = require('cors');
-const connectDB = require('./config/db');
-const authRoutes = require('./routes/auth.routes');
-const protectedRoutes = require('./routes/protected.routes');
-const errorMiddleware = require('./middlewares/error.middleware');
+import express from "express";
+import dotenv from "dotenv";
+import userRoutes from "./routes/user.route.js";
+import protectedRoutes from "./routes/protected.route.js";
+import createUsersTable from "./database/initDatabase.js";
+
+dotenv.config();
 
 const app = express();
 
-app.use(cors());
 app.use(express.json());
-app.use(morgan('dev'));
 
-connectDB();
+createUsersTable();
 
-app.get('/', (req, res) => {
-  const resp = { message: 'Hello World!' };
-  res.json(resp).status(200);
-});
-app.use('/api', authRoutes);
-app.use('/api', protectedRoutes);
+app.use("/api", userRoutes);
 
-app.use(errorMiddleware);
+app.use("/protected", protectedRoutes);
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.get("/", (req, res) => {
+    res.send("Bem-vindo a Home Route!");
 });
 
-module.exports = app;
+app.listen(process.env.APP_PORT, () => {
+    console.log(`Servidor rodando na porta ${process.env.APP_PORT}`);
+});
