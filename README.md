@@ -6,7 +6,7 @@ Este é um projeto backend construído com Node.js, Express e PostgreSQL, fornec
 
 <div align="center" style="display: flex; justify-content: center; align-items: center; gap: 40px; margin: 20px 0;">
   <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*9oOlDJKiLq1KhGoOivv51A.png" alt="Node.js" height="60" style="height: 120px; object-fit: contain;">
-  <img src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" alt="MongoDB" height="60" style="height: 60px; object-fit: contain;">
+  <img src="https://www.siriusopensource.com/sites/default/files/2025-04/postgresql.png" alt="MongoDB" height="60" style="height: 60px; object-fit: contain;">
   <img src="https://jwt.io/img/logo-asset.svg" alt="JWT" height="60" style="height: 80px; object-fit: contain;">
 </div>
 
