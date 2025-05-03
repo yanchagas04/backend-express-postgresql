@@ -1,4 +1,4 @@
-# Backend Express MongoDB - Atividade IV v1
+# Backend Express MongoDB - Atividade IV v2
 
 Este é um projeto backend construído com Node.js, Express e PostgreSQL, fornecendo autenticação básica via token JWT e rotas protegidas.
 
@@ -14,7 +14,7 @@ Este é um projeto backend construído com Node.js, Express e PostgreSQL, fornec
 
 ### Autenticação
 
-#### `[POST] /api/login`
+#### `[POST] /users/login`
 - Gera um token JWT para acessar a área protegida via autenticação.
 
 **Parâmetros (body):**
@@ -25,7 +25,7 @@ Este é um projeto backend construído com Node.js, Express e PostgreSQL, fornec
 }
 ```
 
-#### `[POST] /api/register`
+#### `[POST] /users/register`
 - Cadastra um novo usuário dentro do banco de dados salvando sua senha em hash.
 
 **Parâmetros (body):**
@@ -37,9 +37,9 @@ Este é um projeto backend construído com Node.js, Express e PostgreSQL, fornec
 }
 ```
 
-#### `[GET] /api/protected`
+#### `[GET] /protected`
 - Acessa a área a área protegida.
 
 ## Vídeo Explicativo
 
-[EM BREVE...]()
+[Vídeo Exemplo](https://youtu.be/l-C_cmEI468)
